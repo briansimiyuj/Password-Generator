@@ -52,4 +52,17 @@ function getRandomNumber(){
 
 }
 
-console.log(getRandomNumber())
+// console.log(getRandomNumber())
+
+
+
+
+function getRandomSymbol(){
+
+    let symbol = '€!"#$%&()*+,-./:;<=>?@[\]^_`{|}~¡¢£¤¦¥§¨©ªÎµ¶ŎĵğĎǾǶϾςϑπϞϿ'
+
+    return symbol[Math.floor(Math.random() * symbol.length)]
+
+}
+
+console.log(getRandomSymbol())
