@@ -16,7 +16,25 @@ const clipboard = document.querySelector('.clipboard')
 
 
 
-// console.log(output, lengthEl, upperCase, lowerCase, numbers, symbolEL, generate, clipboard)
+// console.log(output, lengthEl/, upperCase, lowerCase, numbers, symbolEL, generate, clipboard)
+
+
+
+
+
+const randomFunction = {
+
+    lower: getRandomLower,
+
+    upper: getRandomUpper,
+
+    number: getRandomNumber,
+
+    symbol: getRandomSymbol
+
+}
+
+console.log(randomFunction)
 
 
 
@@ -65,4 +83,4 @@ function getRandomSymbol(){
 
 }
 
-console.log(getRandomSymbol())
+// console.log(getRandomSymbol())
