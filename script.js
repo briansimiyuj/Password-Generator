@@ -17,3 +17,15 @@ const clipboard = document.querySelector('.clipboard')
 
 
 // console.log(output, lengthEl, upperCase, lowerCase, numbers, symbolEL, generate, clipboard)
+
+
+
+function getRandomLower(){
+
+    let lower = 'abcdefghijklmnopqrstuvwxyz'
+
+    return lower[Math.floor(Math.random() * lower.length)]
+
+}
+
+console.log(getRandomLower())
