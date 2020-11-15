@@ -59,3 +59,12 @@ i{
     padding: 8px 12px;
     background-color: #aa53aa;
 }
+
+.output-container .btn{
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    right: 5px;   
+    width: 2.7rem;
+    height: 2.7rem;  
+}
