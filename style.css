@@ -40,3 +40,15 @@ i{
     width: 350px;
     max-width: 100%;
 }
+
+.output-container{
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative; 
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    height: 70px;
+    width: 100%;
+}
