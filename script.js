@@ -28,4 +28,17 @@ function getRandomLower(){
 
 }
 
-console.log(getRandomLower())
+// console.log(getRandomLower())
+
+
+
+
+function getRandomUpper(){
+
+    let upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+    return upper[Math.floor(Math.random() * upper.length)]
+
+}
+
+console.log(getRandomUpper())
