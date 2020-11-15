@@ -110,3 +110,16 @@ i{
     position: relative;
     transition: visibility .5s ease;
 }
+
+.icon{
+    position: absolute;
+    top: 10px;
+    background-color: green;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 4rem;
+    display: block;
+    color: #ffffff;
+}
