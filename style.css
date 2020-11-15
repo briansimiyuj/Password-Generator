@@ -33,3 +33,10 @@ input[type=checkbox]{
 i{
     font-size: 5rem;
 }
+
+.container{
+    background-color: #aa5522;
+    padding: 60px;
+    width: 350px;
+    max-width: 100%;
+}
