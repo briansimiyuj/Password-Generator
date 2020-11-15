@@ -85,3 +85,14 @@ i{
 #length{
     width: 30%;
 }
+
+.notify{
+    visibility: hidden;
+}
+
+.notify h1{
+    font-size: 2rem;
+    margin-top:0;
+    position: absolute;
+    top: 60px;
+}
