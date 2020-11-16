@@ -34,7 +34,55 @@ const randomFunction = {
 
 }
 
-console.log(randomFunction)
+// console.log(randomFunction)
+
+
+
+
+
+const generatePassword = (lower, upper, number, symbol, lengthValue) =>{
+
+    let generatedPassword = ''     
+    
+    const typesCount = lower + upper + number + symbol
+
+ //    console.log('Types Count:', typesCount)
+
+    const typesArray = [{ lower }, { upper }, { number }, { symbol }].filter(item => Object.values(item)[0])
+
+ //    console.log('Types Array ', typesArray)
+
+
+    if (typesCount === 0) {
+        
+     return ''
+
+    }
+
+    for (let i = 0; i < lengthValue; i+= typesCount) {
+        
+         typesArray.forEach(type => {
+             
+             const funcName = Object.keys(type)[0]
+
+           //   console.log('Func Name:', funcName)
+             
+             generatedPassword += randomFunction[funcName]()
+
+           //   console.log(generatedPassword)
+
+         })
+
+    //      console.log(generatedPassword.slice(0, lengthValue))
+         
+         
+    }
+
+    const password = generatedPassword.slice(0, lengthValue)
+
+     return password
+
+}
 
 
 
