@@ -39,6 +39,49 @@ const randomFunction = {
 
 
 
+clipboard.addEventListener('click', () =>{
+
+    const textarea = document.createElement('textarea')
+
+    let pwd = output.innerText
+
+
+    if (!pwd) {
+        
+        return
+
+    } else {
+        
+        textarea.value = pwd
+
+    }
+
+
+    document.body.appendChild(textarea)
+
+    textarea.select()
+
+    document.execCommand('copy')
+
+    textarea.remove()
+
+
+    const notify = document.querySelector('.notify')
+
+    notify.classList.add('active')
+
+
+
+    setTimeout(() => {
+           
+       notify.classList.remove('active')
+
+    }, 6000);
+
+})
+
+
+
 
 generate.addEventListener('click', () =>{
 
