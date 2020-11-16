@@ -40,6 +40,28 @@ const randomFunction = {
 
 
 
+generate.addEventListener('click', () =>{
+
+    const lengthValue = +lengthEl.value
+
+    const hasLower = lowerCase.checked
+
+    const hasUpper = upperCase.checked
+
+    const hasNumber  = numbers.checked
+
+    const hasSymbol = symbolEL.checked
+
+//     console.log(hasLower, hasUpper, hasNumber, hasSymbol)
+
+    output.classList.add('generarted')
+
+    output.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, lengthValue)
+
+})
+
+
+
 const generatePassword = (lower, upper, number, symbol, lengthValue) =>{
 
     let generatedPassword = ''     
